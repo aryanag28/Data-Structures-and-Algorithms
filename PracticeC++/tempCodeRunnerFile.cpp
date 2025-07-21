@@ -2,16 +2,17 @@
 using namespace std;
 
 int main(){
-    int i,n,c,j;
+    int n,i,j;
     cin >> n;
     i=1;
-    while(i<=n){
+    while(i<=n)
+    {
         j=1;
-        while(j<=i){
-            cout << "* ";
+        while(j<=n-i+1){
+            cout << j;
             j++;
         }
-        i++;
         cout << endl;
+        i++;
     }
 }

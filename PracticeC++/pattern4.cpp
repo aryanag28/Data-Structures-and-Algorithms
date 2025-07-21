@@ -2,16 +2,19 @@
 using namespace std;
 
 int main(){
-    int i,n,c,j;
+    int n,i,j;
     cin >> n;
     i=1;
-    while(i<=n){
+    while(i<=n)
+    {
         j=1;
-        while(j<=i){
-            cout << "* ";
+        char ch = 'A';
+        while(j<=n){
+            cout << ch;
+            ch =ch+1;
             j++;
         }
-        i++;
         cout << endl;
+        i++;
     }
 }
